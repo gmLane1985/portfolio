@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Garrett Lane - Resume</title>
+    <title>Garrett Lane - Contact</title>
   </head>
   <body>
     <!--NavBar-->
@@ -51,74 +51,107 @@
               <a class="nav-link" href="./projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./resume.html">Resume</a>
+              <a class="nav-link" href="./resume.html">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
+              <a class="nav-link active" href="./contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Resume Section -->
-    <div class="resume-container">
-      <h1 class="H1">Resume</h1>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-container">
+          <h1 class="H1">Get In Touch</h1>
+          <p class="lead">
+            Have a project in mind? Let's discuss how we can work together.
+          </p>
 
-      <!-- Education -->
-      <section id="education" class="resume-section">
-        <h2 class="H2">Education</h2>
-        <ul class="resume-list">
-          <li>
-            <h5 class="H5">Associates Fire Protection Tecnology</h5>
-            <p class="mb-1">Coastal Carolina Community College, 2016 - 2018</p>
-            <p>Graduated with honors, GPA: 3.8/4.0</p>
-          </li>
-          <li>
-            <h5 class="H5">Full-Stack Web Development Bootcamp</h5>
-            <p class="mb-1">
-              The Complete Full-Stack Web Development Bootcamp; Udemy, 2025
-            </p>
-            <p>
-              Completed an intensive program focused on modern web technologies.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <!-- Work Experience -->
-      <section id="work-experience" class="resume-section">
-        <h2 class="H2">Work Experience</h2>
-        <ul class="resume-list">
-          <li>
-            <h5 class="H5">Firefighter/EMT</h5>
-            <p class="mb-1">2007 - 2025</p>
-            <p>
-              Served as a first responder, ensuring public safety and emergency
-              response. Transitioned to tech to pursue a passion for software
-              development.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <!-- Skills -->
-      <section id="skills" class="resume-section">
-        <h2 class="H2">Skills</h2>
-        <ul class="resume-list">
-          <li>HTML, CSS, JavaScript</li>
-        </ul>
-      </section>
-      <hr />
-      <!-- Other Relevant Information -->
-      <section id="other-info" class="resume-section">
-        <h2 class="H2">Other Relevant Information</h2>
-        <p>
-          Fluent in English (native) and German (B2). Strong problem-solving
-          skills and a passion for continuous learning in the tech industry.
-        </p>
-      </section>
-    </div>
+          <form id="contactForm" class="contact-form">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="form-input"
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="form-input"
+                placeholder="(123) 456-7890"
+              />
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="form-input"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <!-- Project Description -->
+            <div class="form-group">
+              <label for="message" class="form-label"
+                >Project Description *</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                required
+                class="form-textarea"
+                placeholder="Tell me about your project or request..."
+                rows="6"
+              ></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+              <label for="photos" class="form-label"
+                >Reference Photos (Optional)</label
+              >
+              <input
+                type="file"
+                id="photos"
+                name="photos"
+                multiple
+                accept="image/*"
+                class="form-input-file"
+              />
+              <p class="form-help">
+                You can upload multiple images as reference materials
+              </p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Send Message →</button>
+          </form>
+
+          <p class="form-note">* Required fields</p>
+        </div>
+      </div>
+    </section>
+    <hr />
 
     <!--Footer-->
     <footer class="footer">
@@ -174,6 +207,11 @@
     </footer>
 
     <!--Scripts-->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/3.x/email.min.js"
+    ></script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/contact.js"></script>
   </body>
 </html>

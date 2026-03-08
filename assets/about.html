@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Garrett Lane - About</title>
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+          <div class="logo-container">
+            <img src="./images/logo.png" alt="Logo" class="logo default-logo" />
+            <img
+              src="./images/logoGreen.png"
+              alt="Logo Hover"
+              class="logo hover-logo"
+            />
+          </div>
+        </a>
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="navbar-menu" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="comparison-section">
+      <div class="container">
+        <div class="comparison-content">
+          <!-- Comparison Content -->
+          <div class="comparison-text">
+            <h2 class="H2">Firefighting to Full-Stack Development?</h2>
+            <p class="lead">
+              Being a firefighter and a computer programmer may seem worlds
+              apart, but both roles require quick problem-solving, precision
+              under pressure, and teamwork to be successful. Firefighters must
+              assess dangerous situations and respond with decisive action, just
+              as programmers must debug code or manage system failures swiftly
+              and effectively. Both professions also rely heavily on
+              protocols—firefighters follow safety procedures, while programmers
+              follow coding standards and best practices. Adaptability is key in
+              both jobs, as no two fires or code issues are exactly the same,
+              and both must be prepared to learn and evolve with new
+              technologies and challenges.
+            </p>
+          </div>
+          <!-- Image -->
+          <div class="comparison-image">
+            <img
+              src="./images/codingFirefighter.png"
+              width="200"
+              height="200"
+              alt="Coding Firefighter"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!--Journey Timeline Section-->
+    <section id="journey" class="journey-section">
+      <div class="container">
+        <h2 class="H2 section-title">My Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="H5">2007-2024</h5>
+              <p><strong>Firefighter/EMT</strong></p>
+              <p>
+                18 years of service as a first responder, developing leadership,
+                teamwork, and crisis management skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="H5">2024</h5>
+              <p><strong>Medical Intervention?</strong></p>
+              <p>
+                Diagnosed with a Neuroendocrine tumor. After 3 surgeries and
+                radiation, I was deemed no longer able to continue in the field
+                of emergency services.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="H5">2025</h5>
+              <p><strong>Career Transition</strong></p>
+              <p>
+                No longer working in Fire/EMS did short internship in IT as
+                Systems Administrator - as a bridge before starting Web
+                Development Boot Camp
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="H5">2026-Present</h5>
+              <p><strong>Full-Stack Web Development Bootcamp</strong></p>
+              <p>
+                Intensive training in modern web technologies, building
+                real-world projects and best practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="H5">2027+</h5>
+              <p><strong>Developer Career</strong></p>
+              <p>
+                Leveraging both professional experience and technical skills to
+                build impactful solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="H2">Contact Me</h2>
+          <p class="lead">
+            Feel free to reach out for collaborations or inquiries!
+          </p>
+          <a
+            href="mailto:garrett.lane1985@gmail.com"
+            class="contact-button"
+            id="contactButton"
+            role="button"
+          >
+            Email Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <span class="footer-text"
+              >© <span id="year"></span> Garrett Lane</span
+            >
+          </div>
+          <div class="footer-middle">
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://www.instagram.com/codingexpat/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  ><img
+                    src="./images/instagram.svg"
+                    width="24"
+                    height="24"
+                    alt="instagram logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/garrett-lane-260a37337/"
+                  target="_blank"
+                  aria-label="Linkedin"
+                  ><img
+                    src="./images/linkedin.svg"
+                    width="24"
+                    height="24"
+                    alt="linkedin logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/codingexpat"
+                  target="_blank"
+                  aria-label="X"
+                  ><img
+                    src="./images/twitter-x.svg"
+                    width="24"
+                    height="24"
+                    alt="x logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
