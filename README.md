@@ -27,3 +27,4 @@ This portfolio uses:
 ---
 
 ## live link:
+https://gmlane1985.github.io/portfolio/
