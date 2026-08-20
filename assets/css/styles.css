@@ -385,6 +385,8 @@ footer {
 
 @media (min-width: 701px) {
   .nav-inner {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -426,16 +428,18 @@ footer {
   .intro {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: clamp(2rem, 7vw, 6rem);
-    min-height: 28rem;
-    padding-block: 5rem;
+    min-height: 32rem;
+    padding-block: 6rem;
   }
 
   .intro-image {
     order: 2;
+    justify-content: flex-end;
   }
 
   .intro-text {
     order: 1;
+    max-width: 32rem;
   }
 
   .about {
@@ -447,16 +451,51 @@ footer {
     gap: clamp(2rem, 7vw, 6rem);
   }
 
+  .about-image {
+    justify-content: flex-start;
+  }
+
+  .about-text {
+    max-width: 34rem;
+  }
+
   .contact-content {
     padding-block: 5rem;
   }
 
   footer {
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1.25rem;
     padding-block: 1.5rem;
   }
 
+  .footer-info {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
   .footer-logo {
     width: min(100%, 12rem);
+  }
+
+  .social-links {
+    justify-content: flex-end;
+    width: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .intro,
+  .about-grid {
+    gap: 7rem;
+  }
+
+  .page-image {
+    width: 22rem;
+  }
+
+  #selfie {
+    width: 20rem;
   }
 }
