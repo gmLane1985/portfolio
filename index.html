@@ -1,20 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Garrett Lane</title>
+  </head>
+  <body id="top">
+    <!--NavBar-->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a class="brand" href="#" aria-label="Garrett Lane home">
+          <div class="logo-wrap">
+            <img
+              src="./assets/images/light-mode-icon.png"
+              alt="Logo"
+              class="logo"
+            />
+          </div>
+        </a>
+        <!-- Navbar Links -->
+        <div class="nav-menu">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label
+            for="menu-toggle"
+            class="menu-button"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </label>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a class="active" aria-current="page" href="#">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="./assets/resume.html">Resume</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <!--intro-->
+    <main>
+      <section class="intro page-width">
+        <div class="intro-image">
+          <img
+            src="./assets/images/selfie.jpeg"
+            class="page-image"
+            alt="Selfie"
+            width="200"
+            height="200"
+            loading="lazy"
+            id="selfie"
+          />
+        </div>
+        <div class="intro-text">
+          <h1 class="page-title">Hi, I'm Garrett.</h1>
+          <p>
+            I spent 18 years as a Firefighter/EMT
+            <br />
+            and then suddenly life threw a curve ball!
+            <br />Now I'm learning Full-Stack-Development
+            <br />
+          </p>
+        </div>
+      </section>
+      <hr />
+      <!-- Comparison Section -->
+      <section id="about" class="page-width about">
+        <div class="about-grid">
+          <!-- Image -->
+          <div class="about-image">
+            <img
+              src="./assets/images/codingFirefighter.png"
+              width="200"
+              height="200"
+              alt="Coding Firefighter"
+              class="page-image"
+            />
+          </div>
+          <!-- Comparison Content -->
+          <div class="about-text">
+            <h2 class="section-title">
+              From Firefighting to Full-Stack Development?
+            </h2>
+            <p>
+              Being a firefighter and a software engineer may seem worlds apart,
+              but both roles require quick problem-solving, precision under
+              pressure, and teamwork to be successful. Firefighters must assess
+              dangerous situations and respond with decisive action, just as
+              developers must debug code or manage system failures swiftly and
+              effectively. Both professions also rely heavily on
+              protocols—firefighters follow safety procedures, while software
+              engineers follow coding standards and best practices. Adaptability
+              is key in both jobs, as no two fires or code issues are exactly
+              the same, and both must be prepared to learn and evolve with new
+              technologies and challenges.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="page-width contact-content">
+          <h2 class="section-title">Contact Me</h2>
+          <p>Feel free to reach out for collaborations or inquiries!</p>
+          <a
+            href="mailto:garrett.lane1985@gmail.com"
+            class="email-button"
+            id="email-button"
+            role="button"
+          >
+            Email Me
+          </a>
+        </div>
+      </section>
+    </main>
 
-    <!-- Tailwind-style reset -->
-    <link rel="stylesheet" href="assets/reset.css">
+    <!--Footer-->
+    <div class="page-width">
+      <footer>
+        <div class="footer-info">
+          <a href="#top" class="footer-logo" aria-label="Back to top">
+            <img
+              src="./assets/images/light-mode-logo.png"
+              alt=""
+              class="footer-photo"
+            />
+          </a>
+          <span>&copy; 2025 Garrett Lane. All Rights Reserved</span>
+        </div>
 
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-
-<body>
-    <h1>Hello World</h1>
-    <script src="assets/script.js"></script>
-</body>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.instagram.com/g.m.lane/"
+              target="_blank"
+              aria-label="Instagram"
+              ><img
+                src="./assets/icons/instagram.svg"
+                width="24"
+                height="24"
+                alt="instagram logo"
+                class="social-media-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/garrett-lane-260a37337/"
+              target="_blank"
+              aria-label="Linkedin"
+              ><img
+                src="./assets/icons/linkedin.svg"
+                width="24"
+                height="24"
+                alt="linkedin logo"
+                class="social-media-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/expat_garrett" target="_blank" aria-label="X"
+              ><img
+                src="./assets/icons/x.svg"
+                width="24"
+                height="24"
+                alt="x logo"
+                class="social-media-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" aria-label="X"
+              ><img
+                src="./assets/icons/github.svg"
+                width="24"
+                height="24"
+                alt="github logo"
+                class="social-media-icon"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
 </html>
