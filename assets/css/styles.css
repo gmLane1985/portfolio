@@ -21,13 +21,7 @@
     --surface: #222724;
     --text: #f1f3f1;
     --muted-text: #b8c0ba;
-    --accent: #6fc49e;
-    --accent-hover: #8bd8b5;
     --border: #3b443e;
-    /* --heading: #518fec;
-    --button-background: #518fec; */
-    --button-hover: #7aabf2;
-    --button-text: #142018;
     --menu-shadow: rgb(0 0 0 / 35%);
   }
 }
