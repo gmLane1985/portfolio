@@ -6,9 +6,9 @@
   --accent: #176b50;
   --accent-hover: #0f4d3a;
   --border: #d8ddd9;
-  --heading: #0013bd;
-  --button-background: #0013bd;
-  --button-hover: #000d82;
+  --heading: #628474;
+  --button-background: #628474;
+  --button-hover: #c0c0c0;
   --button-text: #ffffff;
   --menu-shadow: rgb(0 0 0 / 10%);
   --content-width: 1100px;
@@ -24,8 +24,8 @@
     --accent: #6fc49e;
     --accent-hover: #8bd8b5;
     --border: #3b443e;
-    --heading: #518fec;
-    --button-background: #518fec;
+    /* --heading: #518fec;
+    --button-background: #518fec; */
     --button-hover: #7aabf2;
     --button-text: #142018;
     --menu-shadow: rgb(0 0 0 / 35%);
