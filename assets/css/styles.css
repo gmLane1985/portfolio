@@ -204,6 +204,9 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   gap: 2.5rem;
+  background: var(--page-background);
+  box-shadow: 0 0 0 100vmax var(--page-background);
+  clip-path: inset(0 -100vmax);
   padding-block: 3.5rem;
 }
 
@@ -267,6 +270,9 @@ hr {
 }
 
 .about {
+  background: var(--surface);
+  box-shadow: 0 0 0 100vmax var(--surface);
+  clip-path: inset(0 -100vmax);
   padding-block: 3.5rem;
 }
 
@@ -283,7 +289,7 @@ hr {
 }
 
 .contact {
-  background: var(--surface);
+  background: var(--page-background);
 }
 
 .contact-content {
@@ -325,6 +331,9 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  background: var(--surface);
+  box-shadow: 0 0 0 100vmax var(--surface);
+  clip-path: inset(0 -100vmax);
   padding-block: 1rem;
   border-top: 1px solid var(--border);
   color: var(--muted-text);
@@ -464,22 +473,31 @@ footer {
   }
 
   footer {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem 1.25rem;
     padding-block: 1.5rem;
   }
 
   .footer-info {
-    flex-direction: row;
-    gap: 0.75rem;
+    display: contents;
   }
 
   .footer-logo {
-    width: min(100%, 12rem);
+    grid-column: 1;
+    grid-row: 1;
+    width: min(100%, 8rem);
+  }
+
+  .footer-info > span {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    text-align: center;
   }
 
   .social-links {
+    grid-column: 2;
+    grid-row: 1;
     justify-content: flex-end;
     width: auto;
   }
