@@ -20,11 +20,17 @@
         <!-- Logo -->
         <a class="brand" href="#" aria-label="Garrett Lane home">
           <div class="logo-wrap">
-            <img
-              src="./assets/images/light-mode-icon.png"
-              alt="Logo"
-              class="logo"
-            />
+            <picture>
+              <source
+                srcset="./assets/images/dark-mode-icon.png"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                src="./assets/images/light-mode-icon.png"
+                alt="Logo"
+                class="logo"
+              />
+            </picture>
           </div>
         </a>
         <!-- Navbar Links -->
@@ -45,16 +51,16 @@
                 <a class="active" aria-current="page" href="#">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#">About</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#">Skills</a>
               </li>
               <li>
-                <a href="./assets/resume.html">Resume</a>
+                <a href="#">Resume</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -94,7 +100,7 @@
           <!-- Image -->
           <div class="about-image">
             <img
-              src="./assets/images/codingFirefighter.png"
+              src="./assets/images/codingfirefighter.png"
               width="200"
               height="200"
               alt="Coding Firefighter"
@@ -145,19 +151,28 @@
       <footer>
         <div class="footer-info">
           <a href="#top" class="footer-logo" aria-label="Back to top">
-            <img
-              src="./assets/images/light-mode-logo.png"
-              alt=""
-              class="footer-photo"
-            />
+            <picture>
+              <source
+                srcset="./assets/images/dark-mode-logo.png"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                src="./assets/images/light-mode-logo.png"
+                alt=""
+                class="footer-photo"
+              />
+            </picture>
           </a>
-          <span>&copy; 2025 Garrett Lane. All Rights Reserved</span>
+          <span>
+            &copy; <span id="copyright-year"></span> Garrett Lane. All Rights
+            Reserved
+          </span>
         </div>
 
         <ul class="social-links">
           <li>
             <a
-              href="https://www.instagram.com/g.m.lane/"
+              href="https://www.instagram.com/codingexpat/"
               target="_blank"
               aria-label="Instagram"
               ><img
@@ -170,7 +185,7 @@
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/garrett-lane-260a37337/"
+              href="https://www.linkedin.com/in/garrettmlane/"
               target="_blank"
               aria-label="Linkedin"
               ><img
@@ -182,7 +197,7 @@
             /></a>
           </li>
           <li>
-            <a href="https://x.com/expat_garrett" target="_blank" aria-label="X"
+            <a href="https://x.com/codingexpat" target="_blank" aria-label="X"
               ><img
                 src="./assets/icons/x.svg"
                 width="24"
@@ -192,7 +207,10 @@
             /></a>
           </li>
           <li>
-            <a href="#" target="_blank" aria-label="X"
+            <a
+              href="https://github.com/gmLane1985"
+              target="_blank"
+              aria-label="X"
               ><img
                 src="./assets/icons/github.svg"
                 width="24"
