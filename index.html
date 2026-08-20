@@ -6,19 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Space+Grotesk:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Garrett Lane</title>
+    <title>Garrett Lane | Frontend Developer</title>
   </head>
-  <body id="top">
-    <!--NavBar-->
+  <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-inner">
-        <!-- Logo -->
-        <a class="brand" href="#" aria-label="Garrett Lane home">
+        <a class="brand" href="index.html" aria-label="Garrett Lane home">
           <div class="logo-wrap">
             <img
               src="./assets/images/green-logo-icon.png"
@@ -27,7 +26,6 @@
             />
           </div>
         </a>
-        <!-- Navbar Links -->
         <div class="nav-menu">
           <input type="checkbox" id="menu-toggle" class="menu-toggle" />
           <label
@@ -42,167 +40,162 @@
           <div class="nav-links">
             <ul>
               <li>
-                <a class="active" aria-current="page" href="#">Home</a>
+                <a href="#" class="active" aria-current="page">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Skills</a>
-              </li>
-              <li>
-                <a href="#">Resume</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/projects.html">My Work</a></li>
+              <li><a href="/pages/skills.html">Skills/Education</a></li>
+              <li><a href="/pages/resume.html">Resume</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
 
-    <!--intro-->
     <main>
-      <section class="intro page-width">
-        <div class="intro-image">
+      <!-- Hero -->
+      <section class="hero page-width">
+        <div class="hero-content">
+          <h1 class="page-title">Frontend Developer</h1>
+          <p class="hero-subline">
+            I build clean, responsive web applications with a focus on clarity,
+            reliability, and modern best practices.
+          </p>
+          <p>
+            Based in Germany and currently completing a full-stack development
+            program, I’m transitioning from 18 years as a Firefighter/EMT into
+            software engineering—bringing discipline, calm under pressure, and a
+            problem-solving mindset.
+          </p>
+          <div class="hero-actions">
+            <a href="./pages/resume.html" class="cta-button">View My Resume</a>
+            <a href="./pages/skills.html" class="link-button"
+              >Explore My Skills</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
           <img
             src="./assets/images/selfie.jpeg"
-            class="page-image"
-            alt="Selfie"
-            width="200"
-            height="200"
+            alt="Portrait of Garrett Lane"
+            class="hero-photo"
             loading="lazy"
-            id="selfie"
           />
         </div>
-        <div class="intro-text">
-          <h1 class="page-title">Hi, I'm Garrett.</h1>
-          <p>
-            I spent 18 years as a Firefighter/EMT
-            <br />
-            and then suddenly life threw a curve ball!
-            <br />Now I'm learning Full-Stack-Development
-            <br />
-          </p>
-        </div>
       </section>
-      <hr />
-      <!-- Comparison Section -->
-      <section id="about" class="page-width about">
-        <div class="about-grid">
-          <!-- Image -->
-          <div class="about-image">
-            <img
-              src="./assets/images/codingfirefighter.png"
-              width="200"
-              height="200"
-              alt="Coding Firefighter"
-              class="page-image"
-            />
-          </div>
-          <!-- Comparison Content -->
-          <div class="about-text">
-            <h2 class="section-title">
-              From Firefighting to Full-Stack Development?
-            </h2>
-            <p>
-              Being a firefighter and a software engineer may seem worlds apart,
-              but both roles require quick problem-solving, precision under
-              pressure, and teamwork to be successful. Firefighters must assess
-              dangerous situations and respond with decisive action, just as
-              developers must debug code or manage system failures swiftly and
-              effectively. Both professions also rely heavily on
-              protocols—firefighters follow safety procedures, while software
-              engineers follow coding standards and best practices. Adaptability
-              is key in both jobs, as no two fires or code issues are exactly
-              the same, and both must be prepared to learn and evolve with new
-              technologies and challenges.
-            </p>
+
+      <!-- Featured Project -->
+      <section class="featured page-width" id="featured">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="featured-grid">
+          <img
+            src="./assets/images/featured-project.png"
+            alt="Screenshot of featured project"
+            class="featured-image"
+            loading="lazy"
+          />
+          <div class="featured-text">
+            <h3>Coming Soon</h3>
+            <p>Coming Soon!</p>
+            <div class="featured-meta">
+              <span class="badge">--</span>
+              <span class="badge">--</span>
+              <span class="badge">--</span>
+              <span class="badge">--</span>
+            </div>
+            <a href="#" class="cta-button">View Project</a>
           </div>
         </div>
       </section>
-      <hr />
-      <!-- Contact Section -->
-      <section id="contact" class="contact">
-        <div class="page-width contact-content">
-          <h2 class="section-title">Contact Me</h2>
-          <p>Feel free to reach out for collaborations or inquiries!</p>
-          <a
-            href="mailto:garrett.lane1985@gmail.com"
-            class="email-button"
-            id="email-button"
-            role="button"
-          >
-            Email Me
-          </a>
-        </div>
+
+      <!-- Tech Stack -->
+      <section class="stack page-width" id="stack">
+        <h2 class="section-title">Tech Stack</h2>
+        <ul class="stack-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Git</li>
+          <li>VS Code</li>
+        </ul>
+      </section>
+
+      <!-- Contact Preview -->
+      <section class="contact-preview page-width">
+        <h2 class="section-title">Let’s Connect</h2>
+        <p>
+          Open to junior frontend roles, internships, and collaborative
+          projects. If you’d like to talk about working together, feel free to
+          reach out.
+        </p>
+        <a href="contact.html" class="cta-button">Contact Me</a>
       </section>
     </main>
 
-    <!--Footer-->
-    <div class="page-width">
-      <footer>
+    <!-- Footer -->
+    <footer>
+      <div class="page-width">
         <div class="footer-info">
-          <span>
-            &copy; <span id="copyright-year"></span> Garrett Lane. All Rights
-            Reserved
-          </span>
+          <span
+            >&copy; <span id="copyright-year"></span> Garrett Lane. All Rights
+            Reserved.</span
+          >
         </div>
-
         <ul class="social-links">
           <li>
             <a
               href="https://www.instagram.com/codingexpat/"
               target="_blank"
               aria-label="Instagram"
-              ><img
+            >
+              <img
                 src="./assets/icons/instagram.svg"
-                width="24"
-                height="24"
                 alt="instagram logo"
                 class="social-media-icon"
-            /></a>
+              />
+            </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/garrettmlane/"
               target="_blank"
               aria-label="Linkedin"
-              ><img
+            >
+              <img
                 src="./assets/icons/linkedin.svg"
-                width="24"
-                height="24"
                 alt="linkedin logo"
                 class="social-media-icon"
-            /></a>
+              />
+            </a>
           </li>
           <li>
-            <a href="https://x.com/codingexpat" target="_blank" aria-label="X"
-              ><img
+            <a href="https://x.com/codingexpat" target="_blank" aria-label="X">
+              <img
                 src="./assets/icons/x.svg"
-                width="24"
-                height="24"
                 alt="x logo"
                 class="social-media-icon"
-            /></a>
+              />
+            </a>
           </li>
           <li>
             <a
               href="https://github.com/gmLane1985"
               target="_blank"
-              aria-label="X"
-              ><img
+              aria-label="GitHub"
+            >
+              <img
                 src="./assets/icons/github.svg"
-                width="24"
-                height="24"
                 alt="github logo"
                 class="social-media-icon"
-            /></a>
+              />
+            </a>
           </li>
         </ul>
-      </footer>
-    </div>
-    <script src="./assets/javascript/script.js"></script>
+      </div>
+    </footer>
+
+    <script src="/assets/javascript/script.js"></script>
   </body>
 </html>

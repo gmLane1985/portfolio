@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Contact | Garrett Lane</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a class="brand" href="../index.html" aria-label="Garrett Lane home">
+          <div class="logo-wrap">
+            <img
+              src="/assets/images/green-logo-icon.png"
+              alt="Logo"
+              class="logo"
+            />
+          </div>
+        </a>
+        <div class="nav-menu">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label
+            for="menu-toggle"
+            class="menu-button"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </label>
+          <div class="nav-links">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">My Work</a></li>
+              <li><a href="skills.html">Skills/Education</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li>
+                <a href="contact.html" class="active" aria-current="page"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="contact-page page-width">
+        <h1 class="section-title">Contact</h1>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p>
+              If you’d like to talk about junior frontend roles, internships, or
+              collaborative projects, feel free to reach out. Email is the best
+              way to contact me.
+            </p>
+            <a
+              href="mailto:garrett.lane1985@gmail.com"
+              class="email-button"
+              id="email-button"
+              role="button"
+            >
+              Email Me
+            </a>
+          </div>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="page-width">
+        <div class="footer-info">
+          <span
+            >&copy; <span id="copyright-year"></span> Garrett Lane. All Rights
+            Reserved.</span
+          >
+        </div>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.instagram.com/codingexpat/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img
+                src="/assets/icons/instagram.svg"
+                alt="instagram logo"
+                class="social-media-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/garrettmlane/"
+              target="_blank"
+              aria-label="Linkedin"
+            >
+              <img
+                src="/assets/icons/linkedin.svg"
+                alt="linkedin logo"
+                class="social-media-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/codingexpat" target="_blank" aria-label="X">
+              <img
+                src="/assets/icons/x.svg"
+                alt="x logo"
+                class="social-media-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/gmLane1985"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <img
+                src="/assets/icons/github.svg"
+                alt="github logo"
+                class="social-media-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/assets/javascript/script.js"></script>
+  </body>
+</html>
