@@ -1202,6 +1202,11 @@ footer {
     padding-top: 2.75rem;
   }
 
+  .hero .page-title {
+    white-space: nowrap;
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
   .hero {
     position: relative;
   }
@@ -1296,5 +1301,10 @@ footer {
 
   .hero-photo {
     width: 16rem;
+  }
+
+  .about-highlight h3 {
+    font-size: 1.5rem;
+    white-space: nowrap;
   }
 }
