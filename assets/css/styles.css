@@ -789,10 +789,6 @@ p {
   max-width: 32rem;
 }
 
-.desktop-name {
-  display: none;
-}
-
 .hero-subline {
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
@@ -1132,25 +1128,40 @@ footer {
 
   .hero-image {
     order: 2;
+    position: static;
+    display: flex;
     justify-content: flex-end;
   }
 
   .hero-content {
     order: 1;
+    padding-top: 2.75rem;
   }
 
-  .desktop-name {
-    display: block;
-    margin-bottom: 0.35rem;
-    color: var(--accent);
-    font-family: 'Alegreya', serif;
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    font-weight: 700;
+  .hero {
+    position: relative;
   }
 
   .hero-image .first-name,
   .hero-image .last-name {
-    display: none;
+    position: absolute;
+    top: 5rem;
+    grid-column: auto;
+    right: auto;
+    z-index: 1;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+  }
+
+  .hero-image .first-name {
+    left: 0;
+  }
+
+  .hero-image .last-name {
+    left: 6.2rem;
+  }
+
+  .hero-photo {
+    width: min(100%, 22rem);
   }
 
   .featured-grid {
