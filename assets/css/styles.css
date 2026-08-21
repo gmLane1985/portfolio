@@ -779,16 +779,18 @@ p {
   align-items: center;
   gap: 2.5rem;
   padding-block: 3.5rem;
-  background: radial-gradient(
-    circle at top left,
-    #e3e7e5 0,
-    var(--page-background) 55%
-  );
+  background: var(--page-background);
+  box-shadow: 0 0 0 100vmax var(--page-background);
+  clip-path: inset(0 -100vmax);
 }
 
 .hero-content {
   order: 2;
   max-width: 32rem;
+}
+
+.desktop-name {
+  display: none;
 }
 
 .hero-subline {
@@ -886,36 +888,14 @@ p {
   font-weight: 600;
 }
 
-/* TECH STACK */
-
-.stack {
-  padding-block: 3.5rem;
-}
-
-.stack-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.stack-list li {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 0.6rem 1rem;
-  border-radius: 0.4rem;
-  font-weight: 600;
-  color: var(--accent);
-  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
-}
-
 /* CONTACT PREVIEW (HOME) */
 
 .contact-preview {
   padding-block: 3.5rem;
   text-align: center;
+  background: var(--page-background);
+  box-shadow: 0 0 0 100vmax var(--page-background);
+  clip-path: inset(0 -100vmax);
 }
 
 /* CONTACT PAGE */
@@ -1159,13 +1139,23 @@ footer {
     order: 1;
   }
 
+  .desktop-name {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--accent);
+    font-family: 'Alegreya', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+  }
+
+  .hero-image .first-name,
+  .hero-image .last-name {
+    display: none;
+  }
+
   .featured-grid {
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
     gap: clamp(2rem, 6vw, 4rem);
-  }
-
-  .stack {
-    padding-block: 4rem;
   }
 
   .contact-preview {
