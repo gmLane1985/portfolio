@@ -512,6 +512,7 @@ footer {
   --button-background: #628474;
   --button-hover: #4f685f;
   --button-text: #ffffff;
+  --highlight-background: #e9eeeb;
   --menu-shadow: rgb(0 0 0 / 12%);
   --content-width: 1100px;
 }
@@ -524,6 +525,7 @@ footer {
     --text: #f1f3f1;
     --muted-text: #b8c0ba;
     --border: #3b443e;
+    --highlight-background: #2d3530;
     --menu-shadow: rgb(0 0 0 / 35%);
   }
 }
@@ -1024,7 +1026,7 @@ p {
   order: 3;
   padding: 1.25rem 1.5rem;
   border-radius: 0.6rem;
-  background: #e9eeeb;
+  background: var(--highlight-background);
   border: 1px solid var(--border);
 }
 
