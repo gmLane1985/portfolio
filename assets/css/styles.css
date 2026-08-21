@@ -955,6 +955,17 @@ p {
   max-width: 34rem;
 }
 
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: min(100%, 20rem);
+  height: auto;
+  object-fit: contain;
+}
+
 .about-highlight {
   padding: 1.25rem 1.5rem;
   border-radius: 0.6rem;
