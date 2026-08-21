@@ -563,6 +563,9 @@ p {
   padding-block: 3.5rem;
 }
 
+.resume-header a {
+  text-decoration: underline;
+}
 .resume-header {
   margin-bottom: 2rem;
 }
@@ -781,15 +784,26 @@ footer {
     padding-block: 1.5rem;
   }
 
+  footer > .page-width {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+  }
+
   .footer-info {
     flex-direction: row;
     align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
   }
 
   .social-links {
     width: auto;
     justify-content: flex-end;
     gap: 1.5rem;
+    grid-column: 3;
+    grid-row: 1;
   }
 }
 
