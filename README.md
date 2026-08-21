@@ -1,6 +1,6 @@
 # Garrett Michael Lane — Developer Portfolio
 
-Welcome to my personal developer portfolio. This project showcases my work, skills, and ongoing journey as a software engineering student. It serves as a central place to explore my projects, learn more about me, and connect across platforms.
+Welcome to my personal developer portfolio. This project showcases my work, skills, and ongoing journey as a software development student. It serves as a central place to explore my projects, learn more about me, and connect across platforms.
 
 ---
 
@@ -27,4 +27,5 @@ This portfolio uses:
 ---
 
 ## live link:
+
 https://gmlane1985.github.io/portfolio/
