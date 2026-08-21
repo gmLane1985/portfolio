@@ -852,6 +852,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  background: var(--surface);
 }
 
 .featured-image {
@@ -863,6 +864,7 @@ p {
 
 .featured-text {
   max-width: 32rem;
+  background: var(--surface);
 }
 
 .featured-meta {
