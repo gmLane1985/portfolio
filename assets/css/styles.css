@@ -329,7 +329,7 @@ p {
   aspect-ratio: 1;
   border-radius: 0.6rem;
   border: 3px solid var(--accent);
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: 0 12px 26px rgb(0 0 0 / 14%);
 }
 
@@ -337,7 +337,7 @@ p {
 .last-name {
   color: var(--accent);
   font-family: 'Alegreya', serif;
-  font-size: clamp(1.1rem, 5vw, 1.6rem);
+  font-size: clamp(1.3rem, 6vw, 1.9rem);
   font-weight: 700;
 }
 
@@ -571,7 +571,7 @@ p {
   overflow: hidden;
   border-radius: 0.6rem;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: transparent;
 }
 
 .carousel-track {
@@ -831,7 +831,7 @@ footer {
     grid-column: auto;
     right: auto;
     z-index: 1;
-    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-size: clamp(1.7rem, 3.5vw, 2.4rem);
   }
 
   .hero-image .first-name {
