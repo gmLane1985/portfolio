@@ -445,6 +445,10 @@ p {
   clip-path: inset(0 -100vmax);
 }
 
+.contact-preview .cta-button {
+  margin-top: 1.25rem;
+}
+
 /* CONTACT PAGE */
 
 .contact-page {
@@ -459,6 +463,12 @@ p {
 
 .contact-info {
   max-width: 28rem;
+}
+
+.contact-logo {
+  width: min(100%, 7rem);
+  height: auto;
+  margin-top: 1.25rem;
 }
 
 .contact-form {
