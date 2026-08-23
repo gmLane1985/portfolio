@@ -808,6 +808,7 @@ footer {
     order: 2;
     position: static;
     display: flex;
+    width: 100%;
     justify-content: flex-end;
   }
 
@@ -840,11 +841,12 @@ footer {
   }
 
   .hero-image .last-name {
-    left: 10rem;
+    left: 12rem;
   }
 
   .hero-photo {
-    width: 100%;
+    width: min(100%, 24rem);
+    flex: 0 0 min(100%, 24rem);
   }
 
   .featured-grid {
