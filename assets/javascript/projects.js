@@ -59,8 +59,18 @@ const createProjectMarkup = (project) => `
       ${project.technologies.map((technology) => `<span class="badge">${technology}</span>`).join('')}
     </div>
     <div class="project-actions">
-      <a href="${project.githubUrl}" class="link-button">GitHub</a>
-      <a href="${project.demoUrl}" class="cta-button">Live Demo</a>
+      <a
+        href="${project.githubUrl}"
+        class="link-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >GitHub</a>
+      <a
+        href="${project.demoUrl}"
+        class="cta-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Live Demo</a>
     </div>
   </div>
 `;
