@@ -519,12 +519,16 @@ p {
   object-fit: contain;
 }
 
+.about-text,
 .about-highlight {
-  order: 3;
   padding: 1.25rem 1.5rem;
   border-radius: 0.6rem;
   background: var(--highlight-background);
   border: 1px solid var(--border);
+}
+
+.about-highlight {
+  order: 3;
 }
 
 /* SKILLS PAGE */
