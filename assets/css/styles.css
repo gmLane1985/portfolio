@@ -483,6 +483,7 @@ p {
   width: min(100%, 14rem);
   height: auto;
   margin-top: 1.25rem;
+  margin-inline: auto;
 }
 
 .contact-form {
@@ -903,6 +904,7 @@ footer {
     flex: 1;
     width: 100%;
     min-height: 0;
+    margin-inline: 0;
     object-fit: contain;
   }
 
