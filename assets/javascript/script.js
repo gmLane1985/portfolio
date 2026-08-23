@@ -11,6 +11,7 @@ if (carousel) {
   const images = carousel.querySelectorAll('.carousel-image');
   const dots = carousel.querySelector('.carousel-dots');
   let currentSlide = 0;
+  let autoAdvance;
 
   const updateCarousel = () => {
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -23,27 +24,39 @@ if (carousel) {
     });
   };
 
+  const restartAutoAdvance = () => {
+    clearInterval(autoAdvance);
+    autoAdvance = setInterval(() => {
+      currentSlide = (currentSlide + 1) % images.length;
+      updateCarousel();
+    }, 5000);
+  };
+
+  const selectSlide = (slideIndex) => {
+    currentSlide = slideIndex;
+    updateCarousel();
+    restartAutoAdvance();
+  };
+
   images.forEach((image, index) => {
     const dot = document.createElement('button');
     dot.type = 'button';
     dot.className = 'carousel-dot';
     dot.setAttribute('aria-label', `Show photo ${index + 1}`);
     dot.addEventListener('click', () => {
-      currentSlide = index;
-      updateCarousel();
+      selectSlide(index);
     });
     dots.append(dot);
   });
 
   carousel.querySelector('.carousel-previous').addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + images.length) % images.length;
-    updateCarousel();
+    selectSlide((currentSlide - 1 + images.length) % images.length);
   });
 
   carousel.querySelector('.carousel-next').addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % images.length;
-    updateCarousel();
+    selectSlide((currentSlide + 1) % images.length);
   });
 
   updateCarousel();
+  restartAutoAdvance();
 }

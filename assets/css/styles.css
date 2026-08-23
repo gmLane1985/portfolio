@@ -564,7 +564,7 @@ p {
   flex: 0 0 100%;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .carousel-button {
