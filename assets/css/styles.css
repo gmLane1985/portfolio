@@ -439,7 +439,7 @@ p {
 
 .contact-preview {
   padding-block: 3.5rem;
-  text-align: center;
+  text-align: left;
   background: var(--page-background);
   box-shadow: 0 0 0 100vmax var(--page-background);
   clip-path: inset(0 -100vmax);
@@ -838,6 +838,7 @@ footer {
 
   .contact-preview {
     padding-block: 4rem;
+    text-align: center;
   }
 
   .about-grid {
