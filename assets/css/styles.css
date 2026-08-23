@@ -798,7 +798,7 @@ footer {
   }
 
   .hero {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
     gap: clamp(2rem, 7vw, 5rem);
     min-height: 28rem;
     padding-block: 5rem;
@@ -808,6 +808,7 @@ footer {
     order: 2;
     position: static;
     display: flex;
+    width: 100%;
     justify-content: flex-end;
   }
 
@@ -832,7 +833,7 @@ footer {
     grid-column: auto;
     right: auto;
     z-index: 1;
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: 2.8rem;
   }
 
   .hero-image .first-name {
@@ -845,6 +846,7 @@ footer {
 
   .hero-photo {
     width: min(100%, 24rem);
+    flex: 0 0 min(100%, 24rem);
   }
 
   .featured-grid {
