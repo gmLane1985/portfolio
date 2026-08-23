@@ -35,6 +35,10 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   background: var(--page-background);
   color: var(--text);
   font-family:
@@ -44,6 +48,14 @@ body {
     sans-serif;
   font-size: 0.95rem;
   overflow-x: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 a {
@@ -456,25 +468,32 @@ p {
 }
 
 .contact-layout {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .contact-info {
+  display: contents;
   max-width: 28rem;
 }
 
 .contact-logo {
-  width: min(100%, 7rem);
+  order: 3;
+  width: min(100%, 14rem);
   height: auto;
   margin-top: 1.25rem;
 }
 
 .contact-form {
+  order: 2;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.contact-info p {
+  order: 1;
 }
 
 .contact-form label {
@@ -871,6 +890,20 @@ footer {
 
   .contact-layout {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    display: grid;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 28rem;
+  }
+
+  .contact-logo {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    object-fit: contain;
   }
 
   footer {
