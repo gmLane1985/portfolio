@@ -541,6 +541,82 @@ p {
   order: 3;
 }
 
+.about-carousel {
+  position: relative;
+  order: 4;
+  min-width: 0;
+  padding-bottom: 2.5rem;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 300ms ease;
+}
+
+.carousel-image {
+  flex: 0 0 100%;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: calc(50% - 1.25rem);
+  z-index: 1;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 1.8rem;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
+}
+
+.carousel-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.carousel-previous {
+  left: 0.75rem;
+}
+
+.carousel-next {
+  right: 0.75rem;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  gap: 0.5rem;
+  transform: translateX(-50%);
+}
+
+.carousel-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: transparent;
+}
+
+.carousel-dot.active {
+  background: var(--accent);
+}
+
 /* SKILLS PAGE */
 
 .skills-page {
@@ -773,6 +849,11 @@ footer {
   .about-image,
   .about-highlight {
     order: initial;
+  }
+
+  .about-carousel {
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .about-photo {
