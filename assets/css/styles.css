@@ -933,6 +933,7 @@ footer {
   .contact-info {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     max-width: 28rem;
   }
 
