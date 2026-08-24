@@ -445,10 +445,10 @@ p {
 }
 
 .contact-logo {
-  order: 3;
+  order: 4;
   width: min(100%, 14rem);
   height: auto;
-  margin-top: 1.25rem;
+  margin-top: 0;
   margin-inline: auto;
 }
 
@@ -461,6 +461,30 @@ p {
 
 .contact-info p {
   order: 1;
+}
+
+.contact-social-links {
+  order: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-social-links a {
+  display: block;
+  opacity: 0.75;
+  transition:
+    opacity 180ms ease,
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.contact-social-links .social-media-icon {
+  width: 28px;
+  height: 28px;
 }
 
 .contact-form label {
@@ -920,6 +944,10 @@ footer {
     object-fit: contain;
   }
 
+  .contact-social-links {
+    order: 2;
+  }
+
   /* Footer */
 
   footer {
@@ -970,5 +998,13 @@ footer {
   .about-highlight h3 {
     font-size: 1.5rem;
     white-space: nowrap;
+  }
+}
+
+@media (min-width: 700px) and (hover: hover) {
+  .contact-social-links a:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 0.45rem var(--accent));
+    transform: scale(1.12);
   }
 }
